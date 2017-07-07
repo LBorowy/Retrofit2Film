@@ -1,5 +1,7 @@
 package pl.lborowy.retrofit2film.Model;
 
+import java.util.List;
+
 /**
  * Created by RENT on 2017-07-07.
  */
@@ -14,6 +16,8 @@ public class Film {
     private String director;
     private String tagline;
     private String duration;
+    private List<Cast> castList;
+
 
     public float getRating() {
         return rating;
@@ -77,5 +81,26 @@ public class Film {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public List<Cast> getCastList() {
+        return castList;
+    }
+
+    public void setCastList(List<Cast> castList) {
+        this.castList = castList;
+    }
+
+
+    public static class Cast {
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }

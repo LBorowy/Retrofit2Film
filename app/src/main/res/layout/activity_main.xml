@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/button_show" />
 
-    <TextView
+    <ListView
         android:id="@+id/tv_showFilm"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
